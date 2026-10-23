@@ -1,0 +1,6 @@
+node_modules/
+kalkaro-out/
+demo/mess-run/
+demo/out/
+*.log
+demo-run*.log
