@@ -1,0 +1,17 @@
+Client call notes - Northstar onboarding (messy, written during call)
+
+Nadia started by saying the launch cannot stay on Nov 4. The payment provider approval is still pending, so everyone agreed the launch moves to Nov 11. Omar said he can live with that if the API freeze is Oct 28.
+
+Price argument again. Nadia rejected the proposed $89 launch price. Decision: keep the launch price at $79. Do not put the $89 number in the deck.
+
+Dark mode: Leena likes it, Tomas says it risks the date. Agreed: dark mode is OUT of v1 and can come later. Not a maybe - cut from v1.
+
+Legal point: Nadia confirmed legal has approved the privacy wording. No new legal review needed for that wording.
+
+Who is doing what:
+- Omar to send the revised statement of work by Friday Oct 23.
+- Leena to deliver the checkout mockups by Wednesday Oct 21.
+- Tomas owns testing the refund flow and must report the result by Monday Oct 26.
+- Priya will write the regression checklist after the API freeze on Oct 28.
+
+Still unresolved: annual discount could be 10% or 15%. Nadia will decide after finance reviews it. Nobody agreed a final discount on this call.

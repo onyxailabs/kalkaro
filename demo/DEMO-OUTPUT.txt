@@ -1,0 +1,188 @@
+================================================================
+KalKaro demo — a real run, nothing staged
+Date: Thu Oct 22 07:42:05 UTC 2026
+Machine: the shared VM this was developed on (contended CPU —
+         a normal laptop runs the same model noticeably faster)
+Model: llama3.2:1b-instruct-q4_K_M via Ollama, 100% local
+================================================================
+
+## The dreaded list (demo/tasks.txt)
+
+# My dreaded list — everything here is something I have said "kal karo" (tomorrow) to at least once.
+
+Reply to my landlord Mr. Rashid about the kitchen tap that has been leaking — his email came 6 days ago and I keep putting it off. I need to apologise for the late reply and ask him to send a plumber one morning this week.
+
+Sort out my Downloads folder at last — it is a mess of receipts, scans, screenshots and random files with names like IMG_4021 that mean nothing to anyone.
+
+Make sense of my meeting notes from Tuesday's team call — they have been sitting there all week and I still do not know who agreed to do what.
+
+## BEFORE — the messy folder (demo/mess-run)
+
+mess-run
+mess-run/IMG_4021.png
+mess-run/expense-export-sept.csv
+mess-run/fix-login-bug.js
+mess-run/receipt-coffee-shop.jpg
+mess-run/scan_003.pdf
+
+## The run
+
+KalKaro — 3 dreaded task(s), model llama3.2:1b-instruct-q4_K_M, 100% local.
+Started 10/22/2026, 7:42:05 AM
+
+▸ Task 1: Reply to my landlord Mr. Rashid about the kitchen tap that has been leaking — his email came 6 days ago and I keep putting it off. I need to apologise for the late reply and ask him to send a plumber one morning this week.
+  … still thinking (15s)
+  … still thinking (30s)
+  … still thinking (45s)
+  … still thinking (60s)
+  … still thinking (75s)
+  … still thinking (90s)
+  … still thinking (105s)
+  plan: 5 step(s) in 1m 45s
+  ⛨ guardrail: added the Drafter step the planner missed
+  - [human/drafter] Reply to Mr. Rashid
+  - [human/drafter] Send email
+  - [human/none] Wait for response
+  - [human/organizer] Organize response
+  - [human/none] Send plumber
+  - [machine/drafter] Draft the reply
+  ✓ draft written → drafts/draft-1.md (82.7s)
+  done in 3m 8s
+
+▸ Task 2: Sort out my Downloads folder at last — it is a mess of receipts, scans, screenshots and random files with names like IMG_4021 that mean nothing to anyone.
+  … still thinking (15s)
+  … still thinking (30s)
+  … still thinking (45s)
+  … still thinking (60s)
+  … still thinking (75s)
+  … still thinking (90s)
+  … still thinking (105s)
+  … still thinking (120s)
+  … still thinking (135s)
+  ⛨ planner failed (model call timed out after 150s (wall-clock limit)) — deterministic fallback plan: organizer only
+  - [machine/organizer] Organise the folder
+  ✓ organiser: 5 file(s) moved (2m 19s)
+  done in 4m 49s
+
+▸ Task 3: Make sense of my meeting notes from Tuesday's team call — they have been sitting there all week and I still do not know who agreed to do what.
+  … still thinking (15s)
+  … still thinking (30s)
+  … still thinking (45s)
+  … still thinking (60s)
+  … still thinking (75s)
+  … still thinking (90s)
+  plan: 4 step(s) in 1m 34s
+  ⛨ guardrail: dropped a Drafter step — this task asks for no reply or message
+  - [human/organizer] Organizer
+  - [machine/digester] Digger
+  - [human/none] Human
+  ✓ notes digested → digests/digest-1.md (3m 43s)
+  done in 5m 17s
+
+Report: /home/hatch/workspace/devto-challenge-week3/kalkaro/demo/out/report.md
+Machine steps executed: 3 · prepared-only: 0 · failed: 0 · drafts: 1 · files filed: 5
+
+## The report KalKaro wrote (demo/out/report.md)
+
+# KalKaro — done-for-you report
+
+Run: 10/22/2026, 7:42:05 AM · Model: `llama3.2:1b-instruct-q4_K_M` (local, via Ollama) · Organizer mode: applied (files moved)
+
+## 1. Reply to my landlord Mr. Rashid about the kitchen tap that has been leaking — his email came 6 days ago and I keep putting it off. I need to apologise for the late reply and ask him to send a plumber one morning this week.
+
+Postponed: ~6 day(s) · Doing it by hand: no estimate · KalKaro took: 3m 8s (measured)
+
+### Done for you
+- ✓ **Draft written** (Draft the reply) → `drafts/draft-1.md`
+
+> Hello Mr. Rashid,
+> 
+> I wanted to follow up on my email from six days ago regarding the kitchen tap that has been leaking. I've been meaning to address this issue, but I've been putting it off. I'm now at a point where I need to apologize for the delay and ask for your assistance in sending a plumber to fix the problem this week. I would greatly appreciate it if you could provide a specific time for the plumber to arrive. I've been keeping track of the time, and I'm expecting the plumber to arrive sometime this week. I'm hoping this will be resolved soon, and I'm grateful for your understanding in this matter. I'm looking forward to hearing back from you and finding a solution to this issue. Thank you for your time and assistance.
+> 
+> Best regards
+
+
+### Your tiny remaining steps
+- **Reply to Mr. Rashid** — first move: Compose email
+- **Send email** — first move: Send email
+- **Wait for response** — first move: Wait
+- **Organize response** — first move: Organize
+- **Send plumber** — first move: Send
+
+## 2. Sort out my Downloads folder at last — it is a mess of receipts, scans, screenshots and random files with names like IMG_4021 that mean nothing to anyone.
+
+Postponed: not stated · Doing it by hand: no estimate · KalKaro took: 4m 49s (measured)
+
+### Done for you
+- ✓ **Folder organised** (Organise the folder) — 5 file(s):
+  - `IMG_4021.png` → `_organized/Media/2026-10/img-4021.png` — No readable content — filed by filename
+  - `expense-export-sept.csv` → `_organized/Document/2026-10/expense-export-sept.csv` — Spreadsheet of past expenses, from its own content
+  - `fix-login-bug.js` → `_organized/Code/2026-10/fix-login-bug.js` — Source code — filed by extension, no model call needed
+  - `receipt-coffee-shop.jpg` → `_organized/Receipt/2026-10/receipt-coffee-shop.jpg` — No readable content — filed by filename
+  - `scan_003.pdf` → `_organized/Invoice/2026-10/scan-003.pdf` — Invoice asking for payment, from its own text
+
+### Your tiny remaining step
+- **Glance at the result** — first move: Open the folder and eyeball the new layout
+
+## 3. Make sense of my meeting notes from Tuesday's team call — they have been sitting there all week and I still do not know who agreed to do what.
+
+Postponed: ~7 day(s) · Doing it by hand: ~30 min (planner's estimate) · KalKaro took: 5m 17s (measured)
+
+### Done for you
+- ✓ **Notes digested** (Digger) → `digests/digest-1.md`
+
+## Summary
+The team had a meeting to discuss the autumn launch, with the demo link not working, leading to a discussion on the landing page copy and pricing. The team decided to go with version 2 of the landing page copy, with Dev compressing the images and re-uploading them by Thursday. The team also decided to keep the discount until October 31st and revert to the normal price after that.
+
+The team decided to use version 2 of the landing page copy, with Dev compressing the images and re-uploading them by Thursday. The team decided to keep the discount until October 31st and revert to the normal price after that.
+
+## Decisions
+None recorded.
+
+## Action items
+- [ ] Sara — email print shop about banner sizes
+- [ ] Sara — ask print shop about banner sizes
+- [ ] Priya — email accounts about designer invoice approval
+- [ ] Dev — email accounts about designer invoice approval
+- [ ] Dev — chase accounts about designer invoice approval
+- [ ] Priya — chase accounts about designer invoice approval
+- [ ] Priya — give blog post draft one read-through before shipping
+- [ ] Dev — book room earlier next Tuesday
+- [ ] IT — update office wifi ticket
+
+
+### Your tiny remaining steps
+- **Organizer** — first move: sort files by date
+- **Your remaining step** — first move: Open the digest and star your action items
+
+## The totals
+
+Machine steps executed: **3** · prepared-only: **0** · failed: **0** · drafts written: **1** · files filed: **5**
+
+| # | Dreaded task | Days postponed | By hand (est.) | KalKaro (measured) | Your remaining step |
+|---|--------------|----------------|----------------|--------------------|---------------------|
+| 1 | Reply to my landlord Mr. Rashid about the k… | 6 | — | 3m 8s | Compose email |
+| 2 | Sort out my Downloads folder at last — it i… | — | — | 4m 49s | Open the folder and eyeball the new layout |
+| 3 | Make sense of my meeting notes from Tuesday… | 7 | ~30 min | 5m 17s | sort files by date |
+
+KalKaro never sends, posts or deletes anything. Every draft waits for a human to press send — that part is yours, and it takes seconds.
+
+## AFTER — the folder, filed
+
+mess-run
+mess-run/_organized
+mess-run/_organized/Code
+mess-run/_organized/Code/2026-10
+mess-run/_organized/Code/2026-10/fix-login-bug.js
+mess-run/_organized/Document
+mess-run/_organized/Document/2026-10
+mess-run/_organized/Document/2026-10/expense-export-sept.csv
+mess-run/_organized/Invoice
+mess-run/_organized/Invoice/2026-10
+mess-run/_organized/Invoice/2026-10/scan-003.pdf
+mess-run/_organized/Media
+mess-run/_organized/Media/2026-10
+mess-run/_organized/Media/2026-10/img-4021.png
+mess-run/_organized/Receipt
+mess-run/_organized/Receipt/2026-10
+mess-run/_organized/Receipt/2026-10/receipt-coffee-shop.jpg
